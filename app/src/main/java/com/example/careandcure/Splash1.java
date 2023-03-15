@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.careandcure.Adapter.MpagerAdapter;
+
 import java.util.Timer;
 import java.util.TimerTask;
 

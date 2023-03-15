@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/_50sdp"
         android:background="@color/lightblue"
         tools:ignore="TextSizeCheck">
 
@@ -30,13 +30,13 @@
     <RelativeLayout
         android:id="@+id/Frame"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="@dimen/_410sdp"
         android:background="@color/white">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="@dimen/_600sdp"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <LinearLayout

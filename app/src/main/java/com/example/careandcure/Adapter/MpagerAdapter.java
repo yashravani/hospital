@@ -1,4 +1,4 @@
-package com.example.careandcure;
+package com.example.careandcure.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
