@@ -33,8 +33,8 @@ public class Splash1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash1);
 
-        logintext = findViewById(R.id.logintext);
-        logintext1 = findViewById(R.id.logintext1);
+//        logintext = findViewById(R.id.logintext);
+//        logintext1 = findViewById(R.id.logintext1);
         btnRegister = findViewById(R.id.btnRegister);
 
         btnRegister.setOnClickListener(view -> {
@@ -42,15 +42,15 @@ public class Splash1 extends AppCompatActivity {
             startActivity(intent);
         });
 
-        logintext.setOnClickListener(view -> {
-            Intent intent = new Intent(Splash1.this, LoginActivity.class);
-            startActivity(intent);
-        });
+//        logintext.setOnClickListener(view -> {
+//            Intent intent = new Intent(Splash1.this, LoginActivity.class);
+//            startActivity(intent);
+//        });
 
-        logintext1.setOnClickListener(view -> {
-            Intent intent = new Intent(Splash1.this, LoginActivity.class);
-            startActivity(intent);
-        });
+//        logintext1.setOnClickListener(view -> {
+//            Intent intent = new Intent(Splash1.this, LoginActivity.class);
+//            startActivity(intent);
+//        });
 //        if (Build.VERSION.SDK_INT>=19){
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 //        }else {

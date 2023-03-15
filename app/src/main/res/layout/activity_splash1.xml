@@ -64,7 +64,7 @@
             android:layout_marginHorizontal="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/input_bg"
-            android:text="@string/registration"
+            android:text="@string/start"
             android:textColor="#000000"
             tools:ignore="NotSibling,UnusedAttribute,VisualLintButtonSize,VisualLintBounds" />
 
