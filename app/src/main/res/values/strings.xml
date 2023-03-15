@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Care and Cure</string>
+    <!--    <string name="email">@gmail.com</string>-->
+
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+
+    <string name="registration">REGISTER</string>
+    <string name="already_a_user">Already a user?</string>
+    <string name="log_in">Log In</string>
+    <string name="not_a_member">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="care_and_cure">Care and Cure</string>
+    <string name="care_and_cure_desc">Ready to use Application? Swipe left to learn the basics of Application.</string>
+    <string name="welcome_to_care_and_cure">Welcome to Care and Cure</string>
+    <string name="patient">Patient</string>
+    <string name="Hospital">Hospital</string>
+    <string name="info_patient">\n PATIENT Related Query
+    \n\nPatient can only register in Patient side activity Patient can\'t register in Hospital side activity.
+        Here Patient can only book a appointment and see doctor profile
+    \n\n Hospital Related Query
+    \n\nHospital can only register in Hospital side activity Hospital can\'t register in Patient side activity.
+         Here Hospital can add doctor details, patient details etc.. </string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+
+</resources>
