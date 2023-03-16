@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".LoginAndRegister.DoctorLogin">
 
     <RelativeLayout
         android:id="@+id/layout"
@@ -80,36 +80,7 @@
                 tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         </RelativeLayout>
-
-        <TextView
-            android:id="@+id/textregister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/layout1"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginEnd="@dimen/_50sdp"
-            android:gravity="center_horizontal"
-            android:text="@string/not_a_member"
-            tools:ignore="HardcodedText,VisualLintOverlap" />
-
-        <TextView
-            android:id="@+id/textregister1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/layout1"
-            android:layout_marginStart="@dimen/_110sdp"
-            android:layout_marginTop="@dimen/_9sdp"
-            android:gravity="center"
-            android:text="@string/register"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
     </RelativeLayout>
 
 
-
-
 </RelativeLayout>
-
-

@@ -1,23 +1,30 @@
-package com.example.careandcure;
+package com.example.careandcure.LoginAndRegister;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+import com.example.careandcure.HomeActivity;
+import com.example.careandcure.PatientHospitalDoctor;
+import com.example.careandcure.R;
+import com.example.careandcure.Splash1;
+
+public class HospitalLogin extends AppCompatActivity {
 
     TextView textregister,textregister1;
     ImageView arrowback;
     AppCompatButton loginbutton;
 
+    @SuppressLint({"ResourceAsColor", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_hospital_login);
 
         textregister = findViewById(R.id.textregister);
         textregister1 = findViewById(R.id.textregister1);
@@ -25,27 +32,28 @@ public class LoginActivity extends AppCompatActivity {
         arrowback = findViewById(R.id.arrowback);
 
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this,Splash1.class);
+            Intent intent = new Intent(HospitalLogin.this, PatientHospitalDoctor.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         loginbutton.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+            Intent intent = new Intent(HospitalLogin.this, HomeActivity.class);
             startActivity(intent);
         });
 
         textregister.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this, PatientHospitalDoctor.class);
+            Intent intent = new Intent(HospitalLogin.this, HospitalRegister.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         textregister1.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this, PatientHospitalDoctor.class);
+            Intent intent = new Intent(HospitalLogin.this, HospitalRegister.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
+
 
     }
 }
