@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
     tools:context=".Splash1">
 
     <RelativeLayout
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:background="@color/lightblue"
@@ -20,7 +20,6 @@
             android:layout_centerInParent="true"
             android:background="@color/lightblue"
             android:fontFamily="@font/tienne"
-            android:gravity="center_horizontal"
             android:text="@string/care_and_cure"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -30,7 +29,9 @@
     <RelativeLayout
         android:id="@+id/Frame"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_410sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_above="@+id/btnRegister"
         android:background="@color/white"
         tools:ignore="VisualLintBounds">
 
@@ -52,45 +53,17 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/input_bg"
+        android:text="@string/start"
+        android:textColor="#000000"
+        tools:ignore="NotSibling,UnusedAttribute,VisualLintButtonSize,VisualLintBounds" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:background="@drawable/input_bg"
-            android:text="@string/start"
-            android:textColor="#000000"
-            tools:ignore="NotSibling,UnusedAttribute,VisualLintButtonSize,VisualLintBounds" />
-
-    </LinearLayout>
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/logintext"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="@dimen/_15sdp"-->
-    <!--        android:layout_marginEnd="@dimen/_10sdp"-->
-    <!--        android:layout_gravity="right"-->
-    <!--        android:text="@string/already_a_user"-->
-    <!--        android:textColor="@color/black"-->
-    <!--        android:textSize="14sp"/>-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/logintext1"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginEnd="@dimen/_10sdp"-->
-    <!--        android:layout_gravity="right"-->
-    <!--        android:text="@string/log_in"-->
-    <!--        android:textColor="@color/black"-->
-    <!--        android:textSize="14sp"-->
-    <!--        android:textStyle="bold"/>-->
-
-
-</LinearLayout>
+</RelativeLayout>

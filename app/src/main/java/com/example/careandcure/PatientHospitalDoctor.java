@@ -12,46 +12,32 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class PatientAndHospital extends AppCompatActivity {
+public class PatientHospitalDoctor extends AppCompatActivity {
 
     ImageView messege,arrowback;
     BottomSheetDialog dialog;
-    TextView logintext, logintext1,patient,hospital;
+    TextView patient,hospital;
 
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_and_hospital);
+        setContentView(R.layout.activity_patient_hospital_doctor_login);
 
         messege = findViewById(R.id.messege);
         arrowback = findViewById(R.id.arrowback);
-        logintext = findViewById(R.id.logintext);
-        logintext1 = findViewById(R.id.logintext1);
         patient = findViewById(R.id.patient);
         hospital = findViewById(R.id.hospital);
 
         patient.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientAndHospital.this,PatientRegister.class);
+            Intent intent = new Intent(PatientHospitalDoctor.this,PatientRegister.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         hospital.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientAndHospital.this,HospitalRegister.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent);
-        });
-
-        logintext.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientAndHospital.this, LoginActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent);
-        });
-
-        logintext1.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientAndHospital.this, LoginActivity.class);
+            Intent intent = new Intent(PatientHospitalDoctor.this,HospitalRegister.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
@@ -62,7 +48,7 @@ public class PatientAndHospital extends AppCompatActivity {
         dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
 
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientAndHospital.this,Splash1.class);
+            Intent intent = new Intent(PatientHospitalDoctor.this,Splash1.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
 

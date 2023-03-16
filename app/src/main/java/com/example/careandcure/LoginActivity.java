@@ -5,7 +5,6 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,13 +36,13 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         textregister.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this,PatientAndHospital.class);
+            Intent intent = new Intent(LoginActivity.this, PatientHospitalDoctor.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         textregister1.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this,PatientAndHospital.class);
+            Intent intent = new Intent(LoginActivity.this, PatientHospitalDoctor.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });

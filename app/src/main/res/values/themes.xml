@@ -64,7 +64,7 @@
     </style>
 
     <style name="Theme.login" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
@@ -86,7 +86,7 @@
     </style>
 
     <style name="Theme.patientandhoapital" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor">#b8d7f5</item>
+        <item name="android:statusBarColor">#19FF5722</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
@@ -98,6 +98,13 @@
     <style name="Theme.hospitalregister" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+
+    <style name="Button">
+        <item name="backgroundColor">@color/lightblue</item>
+        <item name="android:buttonCornerRadius" tools:targetApi="p">20dp</item>
+        <item name="strokeWidth">4dp</item>
     </style>
 
 </resources>

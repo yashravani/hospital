@@ -20,45 +20,13 @@
             android:exported="false"
             android:theme="@style/Theme.pateintregister"/>
         <activity
-            android:name=".PatientAndHospital"
+            android:name=".PatientHospitalDoctor"
             android:exported="false"
             android:theme="@style/Theme.patientandhoapital" />
         <activity
             android:name=".Splash1"
             android:exported="false"
             android:theme="@style/Theme.splash1" />
-        <activity
-            android:name=".WardActivity"
-            android:exported="false"
-            android:theme="@style/Theme.ward" />
-        <activity
-            android:name=".StaffActivity"
-            android:exported="false"
-            android:theme="@style/Theme.staff" />
-        <activity
-            android:name=".ShowStaffActivity"
-            android:exported="false"
-            android:theme="@style/Theme.showstaff" />
-        <activity
-            android:name=".ShowPatientActivity"
-            android:exported="false"
-            android:theme="@style/Theme.showpatient" />
-        <activity
-            android:name=".PatientDetailsActivity"
-            android:exported="false"
-            android:theme="@style/Theme.patientdetails" />
-        <activity
-            android:name=".PasswordEditActivity"
-            android:exported="false"
-            android:theme="@style/Theme.passwordedit" />
-        <activity
-            android:name=".EditInfoActivity"
-            android:exported="false"
-            android:theme="@style/Theme.edit" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false"
-            android:theme="@style/Theme.register" />
         <activity
             android:name=".HomeActivity"
             android:exported="false"

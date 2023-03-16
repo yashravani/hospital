@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +12,6 @@ import android.os.Handler;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.example.careandcure.Adapter.MpagerAdapter;
 
@@ -21,7 +21,7 @@ import java.util.TimerTask;
 public class Splash1 extends AppCompatActivity {
 
     AppCompatButton btnRegister;
-    TextView logintext, logintext1;
+
     private ViewPager mPager;
     private final int[] layouts = {R.layout.first_slide, R.layout.second_slide, R.layout.third_slide, R.layout.fourth_slide};
     private LinearLayout Dots_Layout;
@@ -33,24 +33,13 @@ public class Splash1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash1);
 
-//        logintext = findViewById(R.id.logintext);
-//        logintext1 = findViewById(R.id.logintext1);
         btnRegister = findViewById(R.id.btnRegister);
 
         btnRegister.setOnClickListener(view -> {
-            Intent intent = new Intent(Splash1.this, PatientAndHospital.class);
+            Intent intent = new Intent(Splash1.this, PatientHospitalDoctor.class);
             startActivity(intent);
         });
 
-//        logintext.setOnClickListener(view -> {
-//            Intent intent = new Intent(Splash1.this, LoginActivity.class);
-//            startActivity(intent);
-//        });
-
-//        logintext1.setOnClickListener(view -> {
-//            Intent intent = new Intent(Splash1.this, LoginActivity.class);
-//            startActivity(intent);
-//        });
 //        if (Build.VERSION.SDK_INT>=19){
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 //        }else {
@@ -121,12 +110,9 @@ public class Splash1 extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-
                 handler.post(runnable);
-
             }
         }, 250, 4000);
-
     }
 
 }
