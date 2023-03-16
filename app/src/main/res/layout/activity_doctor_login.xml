@@ -12,15 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
-        android:background="@color/lightblue"
+        android:background="@color/white"
         android:padding="@dimen/_5sdp">
 
         <ImageView
             android:id="@+id/arrowback"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
-            android:src="@drawable/baseline_arrow_back_24"
-            tools:ignore="ContentDescription,RtlHardcoded" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_arrow_back_24"/>
 
     </RelativeLayout>
 
@@ -30,22 +30,27 @@
         android:layout_below="@+id/layout"
         android:padding="@dimen/_5sdp">
 
-        <pl.droidsonroids.gif.GifImageView
+
+        <ImageView
             android:id="@+id/gif"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_180sdp"
-            android:src="@drawable/login" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/doctorlogin"
+            tools:ignore="ImageContrastCheck" />
+
 
         <RelativeLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/gif"
-            android:layout_marginStart="@dimen/_6sdp"
-            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
             android:background="@drawable/shape"
-            android:elevation="@dimen/_14sdp"
-            android:padding="@dimen/_4sdp">
+            android:elevation="@dimen/_20sdp"
+            android:padding="@dimen/_12sdp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputtext"
@@ -77,7 +82,7 @@
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/input_bg"
                 android:text="NEXT"
-                tools:ignore="HardcodedText,VisualLintButtonSize" />
+                tools:ignore="HardcodedText,VisualLintButtonSize,VisualLintBounds" />
 
         </RelativeLayout>
     </RelativeLayout>

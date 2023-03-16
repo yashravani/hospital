@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
-        android:background="@color/lightblue"
+        android:background="#1D4CAF50"
         android:padding="@dimen/_5sdp">
 
         <ImageView
@@ -31,29 +31,32 @@
         android:layout_below="@+id/layout"
         android:padding="@dimen/_5sdp">
 
-        <pl.droidsonroids.gif.GifImageView
+        <ImageView
             android:id="@+id/gif"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_180sdp"
-            android:src="@drawable/login" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/hospitallogin"
+            tools:ignore="ImageContrastCheck" />
 
         <RelativeLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/gif"
-            android:layout_marginStart="@dimen/_6sdp"
-            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:background="@drawable/shape"
-            android:elevation="@dimen/_14sdp"
-            android:padding="@dimen/_4sdp">
+            android:elevation="@dimen/_16sdp"
+            android:padding="@dimen/_8sdp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:hint="@string/phone"
+                android:hint="@string/phone_or_email"
                 app:boxStrokeColor="@color/black"
                 app:hintTextColor="@color/black">
 
@@ -61,7 +64,7 @@
                     android:id="@+id/Phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"
+                    android:inputType="textPhonetic"
                     android:textColor="@color/black"
                     android:textColorHint="#546E7A"
                     android:textSize="16sp"
@@ -69,16 +72,41 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputtext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputtext"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="@string/password"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="#546E7A"
+                    android:textSize="16sp"
+                    tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputtext"
+                android:layout_below="@+id/inputtext1"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/input_bg"
                 android:text="NEXT"
-                tools:ignore="HardcodedText,VisualLintButtonSize" />
+                tools:ignore="HardcodedText,VisualLintButtonSize,VisualLintBounds" />
+
 
         </RelativeLayout>
 

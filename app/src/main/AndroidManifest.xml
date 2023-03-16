@@ -12,6 +12,18 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".otp.HospitalOtp"
+            android:exported="false"
+            android:theme="@style/Theme.hospitalotp"/>
+        <activity
+            android:name=".otp.DoctorOtp"
+            android:exported="false"
+            android:theme="@style/Theme.doctorotp"/>
+        <activity
+            android:name=".otp.PatientOtp"
+            android:exported="false"
+            android:theme="@style/Theme.patientotp"/>
+        <activity
             android:name=".LoginAndRegister.HospitalRegister"
             android:exported="false"
             android:theme="@style/Theme.hospitalregister" />

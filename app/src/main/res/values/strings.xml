@@ -34,13 +34,16 @@
     <string name="work_in_progress">Work In Progress..</string>
     <string name="DoctorLogin">Doctor Login</string>
     <string name="todo">TODO</string>
-
-
-    <string-array name="gender_options">
-        <item>Male</item>
-        <item>Female</item>
-        <item>Other</item>
-    </string-array>
+    <string name="phone_or_email">Phone or Email</string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_image">Add Image</string>
+    <string name="REGISTRATION">REGISTRATION</string>
+    <string name="hospital">HOSPITAL</string>
+    <string name="certificate">CERTIFICATE</string>
 
 
 </resources>

@@ -13,6 +13,7 @@ import com.example.careandcure.HomeActivity;
 import com.example.careandcure.PatientHospitalDoctor;
 import com.example.careandcure.R;
 import com.example.careandcure.Splash1;
+import com.example.careandcure.otp.HospitalOtp;
 
 public class HospitalLogin extends AppCompatActivity {
 
@@ -38,7 +39,8 @@ public class HospitalLogin extends AppCompatActivity {
         });
 
         loginbutton.setOnClickListener(view -> {
-            Intent intent = new Intent(HospitalLogin.this, HomeActivity.class);
+            Intent intent = new Intent(HospitalLogin.this, HospitalOtp.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 

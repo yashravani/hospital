@@ -22,18 +22,18 @@ public class HospitalRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_register);
 
-//        button = findViewById(R.id.button);
-//        button.setOnClickListener(v -> button.setBackgroundColor(Color.GREEN));
-//
-//        imageinfo = findViewById(R.id.imageinfo);
-//        imageinfo.setOnClickListener(view -> {
-//            AlertDialog.Builder builder = new AlertDialog.Builder(view.findViewById(R.id.imageinfo).getContext());
-//            builder.setTitle("Add Image");
-//            builder.setMessage("Doctor :- If you are a doctor then put your image here \nDegree :- Put a photo of the degree you have obtained here");
-//            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
-//            });
-//            builder.show();
-//        });
+        button = findViewById(R.id.button);
+        button.setOnClickListener(v -> button.setBackgroundColor(Color.GREEN));
+
+        imageinfo = findViewById(R.id.imageinfo);
+        imageinfo.setOnClickListener(view -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(view.findViewById(R.id.imageinfo).getContext());
+            builder.setTitle("Add Image");
+            builder.setMessage("Hospital :- Add your hospital image \nCertificate :- Add your hospital certificate image for security purpose");
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
+            });
+            builder.show();
+        });
 
     }
 }
