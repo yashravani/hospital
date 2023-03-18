@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.example.careandcure.R;
+import com.google.android.material.textfield.TextInputLayout;
 
 public class HospitalRegister extends AppCompatActivity {
 
@@ -24,6 +25,9 @@ public class HospitalRegister extends AppCompatActivity {
 
         button = findViewById(R.id.button);
         button.setOnClickListener(v -> button.setBackgroundColor(Color.GREEN));
+
+        TextInputLayout phoneInputLayout = findViewById(R.id.inputtext);
+        phoneInputLayout.setPrefixText("+91 ");
 
         imageinfo = findViewById(R.id.imageinfo);
         imageinfo.setOnClickListener(view -> {

@@ -12,17 +12,29 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".HospitalHome"
+            android:exported="false"
+            android:theme="@style/Theme.hospitalhome" />
+        <activity
+            android:name=".DoctorHome"
+            android:exported="false"
+            android:theme="@style/Theme.doctorhome" />
+        <activity
+            android:name=".PatientHome"
+            android:exported="false"
+            android:theme="@style/Theme.patienthome" />
+        <activity
             android:name=".otp.HospitalOtp"
             android:exported="false"
-            android:theme="@style/Theme.hospitalotp"/>
+            android:theme="@style/Theme.hospitalotp" />
         <activity
             android:name=".otp.DoctorOtp"
             android:exported="false"
-            android:theme="@style/Theme.doctorotp"/>
+            android:theme="@style/Theme.doctorotp" />
         <activity
             android:name=".otp.PatientOtp"
             android:exported="false"
-            android:theme="@style/Theme.patientotp"/>
+            android:theme="@style/Theme.patientotp" />
         <activity
             android:name=".LoginAndRegister.HospitalRegister"
             android:exported="false"

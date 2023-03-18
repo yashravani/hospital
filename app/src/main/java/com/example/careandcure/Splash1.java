@@ -12,7 +12,6 @@ import android.os.Handler;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.example.careandcure.Adapter.MpagerAdapter;
 
 import java.util.Timer;
@@ -27,14 +26,13 @@ public class Splash1 extends AppCompatActivity {
     private LinearLayout Dots_Layout;
     private int current_position = 0;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "ResourceType"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash1);
 
         btnRegister = findViewById(R.id.btnRegister);
-
         btnRegister.setOnClickListener(view -> {
             Intent intent = new Intent(Splash1.this, PatientHospitalDoctor.class);
             startActivity(intent);
@@ -46,11 +44,11 @@ public class Splash1 extends AppCompatActivity {
 //            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 //        }
 
-        mPager = (ViewPager) findViewById(R.id.viewPager);
+        mPager = findViewById(R.id.viewPager);
         MpagerAdapter mpagerAdapter = new MpagerAdapter(layouts, this);
         mPager.setAdapter(mpagerAdapter);
 
-        Dots_Layout = (LinearLayout) findViewById(R.id.dotsLayout);
+        Dots_Layout = findViewById(R.id.dotsLayout);
         createDots(0);
 
         mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

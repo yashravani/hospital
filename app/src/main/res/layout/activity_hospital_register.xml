@@ -37,7 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_200sdp"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/hospitalregister" />
+                android:src="@drawable/hospitalregister"
+                tools:ignore="ImageContrastCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,7 +67,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-
+                    android:id="@+id/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10sdp"

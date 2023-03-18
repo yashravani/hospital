@@ -9,10 +9,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.careandcure.HomeActivity;
 import com.example.careandcure.PatientHospitalDoctor;
 import com.example.careandcure.R;
-import com.example.careandcure.Splash1;
 import com.example.careandcure.otp.HospitalOtp;
 
 public class HospitalLogin extends AppCompatActivity {

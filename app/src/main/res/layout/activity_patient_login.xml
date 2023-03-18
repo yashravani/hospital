@@ -19,8 +19,8 @@
             android:id="@+id/arrowback"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
-            android:src="@drawable/baseline_arrow_back_24"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_arrow_back_24" />
 
     </RelativeLayout>
 
@@ -34,15 +34,39 @@
             android:id="@+id/gif"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_180sdp"
-            android:src="@drawable/patientlogin"
             android:contentDescription="@string/todo"
+            android:src="@drawable/patientlogin"
             tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gif"
+            android:gravity="center"
+            android:text="@string/otp_verification"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:gravity="center"
+            android:text="@string/OTP_desc"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gif"
+            android:layout_below="@+id/text1"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_10sdp"
@@ -50,8 +74,9 @@
             android:elevation="@dimen/_16sdp"
             android:padding="@dimen/_8sdp">
 
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/inputtext"
+                android:id="@+id/textinputpatient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
@@ -59,8 +84,9 @@
                 app:boxStrokeColor="@color/black"
                 app:hintTextColor="@color/black">
 
+
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/Phone"
+                    android:id="@+id/textphonepatient"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
@@ -75,15 +101,15 @@
                 android:id="@+id/loginbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputtext"
+                android:layout_below="@+id/textinputpatient"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/input_bg"
-                android:text="NEXT"
+                android:text="GET OTP"
                 tools:ignore="HardcodedText,VisualLintButtonSize,VisualLintBounds" />
 
         </RelativeLayout>
-    </RelativeLayout>
 
+    </RelativeLayout>
 
 </RelativeLayout>

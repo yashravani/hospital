@@ -74,6 +74,32 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
+    <style name="Theme.patienthome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.doctorhome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.hospitalhome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+
+
+    <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
 
 
     <style name="Button">
