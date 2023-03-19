@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/blank">
+        <menu>
+            <group android:checkableBehavior="none" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/patientdetails"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/patient_details" />
+
+        <item
+            android:id="@+id/staffdetails"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/staff_details" />
+
+        <item
+            android:id="@+id/doctordetails"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/doctor_details" />
+
+
+    </group>
+
+    <item android:title="@string/profile">
+        <menu>
+
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="@string/profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_outline_exit_to_app_24"
+                    android:title="@string/logout" />
+
+                <item
+                    android:id="@+id/nav_policy"
+                    android:icon="@drawable/ic_baseline_vpn_key_24"
+                    android:title="@string/change_password" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/other">
+        <menu>
+
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="@string/share" />
+
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/ic_baseline_star_rate_24"
+                    android:title="@string/rate_us" />
+
+                <item
+                    android:id="@+id/nav_delete"
+                    android:icon="@drawable/ic_baseline_delete_24"
+                    android:title="@string/delete_account" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
+
+
+
