@@ -89,7 +89,7 @@
                     android:id="@+id/textphonepatient"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"
+                    android:inputType="number"
                     android:textColor="@color/black"
                     android:textColorHint="#546E7A"
                     android:textSize="16sp"

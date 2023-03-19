@@ -89,6 +89,19 @@
     <string name="compeleted">Compeleted</string>
     <string name="makepayment">Make Payment With Easy Way</string>
     <string name="paymentdesc">Your Payment On Way…</string>
+    <string name="specialist">Specialist</string>
+    <string name="qualification">Qualification</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="staff_details">Staff Details</string>
+    <string name="doctor_details">Doctor Details</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate_us</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="blank" />
+    <string name="other">Other</string>
 
 
 </resources>

@@ -60,10 +60,6 @@
             android:exported="false"
             android:theme="@style/Theme.splash1" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.home" />
-        <activity
             android:name=".SpleshActivity"
             android:exported="true"
             android:theme="@style/Theme.splash">

@@ -99,9 +99,6 @@
     </style>
 
 
-
-
-
     <style name="Button">
         <item name="backgroundColor">@color/lightblue</item>
         <item name="android:buttonCornerRadius" tools:targetApi="p">20dp</item>
