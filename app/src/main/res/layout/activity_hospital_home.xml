@@ -7,174 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".HospitalHome">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/menu_icon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_clear_all_24"
-            tools:ignore="ContentDescription" />
-
-    </LinearLayout>
-
-    <!--    <LinearLayout-->
-    <!--        android:id="@+id/linearLayout"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:orientation="vertical"-->
-    <!--        android:padding="10dp">-->
-
-    <!--        <TextView-->
-    <!--            android:id="@+id/tvDrName"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_marginTop="20dp"-->
-    <!--            android:gravity="center"-->
-    <!--            android:padding="5dp"-->
-    <!--            android:text="asdsf"-->
-    <!--            android:textColor="@color/black"-->
-    <!--            android:textSize="30dp" />-->
-
-    <!--        <androidx.cardview.widget.CardView-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_marginTop="100dp"-->
-    <!--            android:backgroundTint="@color/lightblue"-->
-    <!--            android:gravity="center"-->
-    <!--            app:cardCornerRadius="10dp"-->
-    <!--            app:cardElevation="5dp">-->
-
-    <!--            <LinearLayout-->
-    <!--                android:layout_width="match_parent"-->
-    <!--                android:layout_height="match_parent"-->
-    <!--                android:orientation="vertical">-->
-
-    <!--                <LinearLayout-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="match_parent"-->
-    <!--                    android:orientation="horizontal">-->
-
-    <!--                    <androidx.cardview.widget.CardView-->
-    <!--                        android:id="@+id/GWard1"-->
-    <!--                        android:layout_width="match_parent"-->
-    <!--                        android:layout_height="150dp"-->
-    <!--                        android:layout_margin="10dp"-->
-    <!--                        android:layout_weight="1"-->
-    <!--                        app:cardCornerRadius="10dp"-->
-    <!--                        app:cardElevation="5dp">-->
-
-    <!--                        <LinearLayout-->
-    <!--                            android:layout_width="match_parent"-->
-    <!--                            android:layout_height="match_parent"-->
-    <!--                            android:gravity="center"-->
-    <!--                            android:orientation="vertical">-->
-
-    <!--                            <TextView-->
-    <!--                                android:layout_width="match_parent"-->
-    <!--                                android:layout_height="wrap_content"-->
-    <!--                                android:layout_marginTop="10dp"-->
-    <!--                                android:gravity="center"-->
-    <!--                                android:text="General Ward"-->
-    <!--                                android:textSize="20dp"-->
-    <!--                                tools:ignore="TextSizeCheck" />-->
-
-    <!--                            <TextView-->
-    <!--                                android:layout_width="match_parent"-->
-    <!--                                android:layout_height="wrap_content"-->
-    <!--                                android:gravity="center"-->
-    <!--                                android:text="1"-->
-    <!--                                android:textSize="40dp" />-->
-
-    <!--                        </LinearLayout>-->
-    <!--                    </androidx.cardview.widget.CardView>-->
-
-    <!--                    <androidx.cardview.widget.CardView-->
-    <!--                        android:id="@+id/GWard2"-->
-    <!--                        android:layout_width="match_parent"-->
-    <!--                        android:layout_height="150dp"-->
-    <!--                        android:layout_margin="10dp"-->
-    <!--                        android:layout_weight="1"-->
-    <!--                        app:cardCornerRadius="10dp"-->
-    <!--                        app:cardElevation="5dp">-->
-
-    <!--                        <LinearLayout-->
-    <!--                            android:layout_width="match_parent"-->
-    <!--                            android:layout_height="match_parent"-->
-    <!--                            android:gravity="center"-->
-    <!--                            android:orientation="vertical">-->
-
-    <!--                            <TextView-->
-    <!--                                android:layout_width="match_parent"-->
-    <!--                                android:layout_height="wrap_content"-->
-    <!--                                android:layout_marginTop="10dp"-->
-    <!--                                android:gravity="center"-->
-    <!--                                android:text="General Ward"-->
-    <!--                                android:textSize="20dp" />-->
-
-    <!--                            <TextView-->
-    <!--                                android:layout_width="match_parent"-->
-    <!--                                android:layout_height="wrap_content"-->
-    <!--                                android:gravity="center"-->
-    <!--                                android:text="2"-->
-    <!--                                android:textSize="40dp" />-->
-
-    <!--                        </LinearLayout>-->
-    <!--                    </androidx.cardview.widget.CardView>-->
-
-    <!--                </LinearLayout>-->
-
-    <!--                <LinearLayout-->
-    <!--                    android:layout_width="match_parent"-->
-    <!--                    android:layout_height="match_parent"-->
-    <!--                    android:orientation="horizontal">-->
-
-    <!--                    <androidx.cardview.widget.CardView-->
-    <!--                        android:id="@+id/SSWard"-->
-    <!--                        android:layout_width="match_parent"-->
-    <!--                        android:layout_height="150dp"-->
-    <!--                        android:layout_margin="10dp"-->
-    <!--                        android:layout_weight="1"-->
-    <!--                        app:cardCornerRadius="10dp"-->
-    <!--                        app:cardElevation="5dp">-->
-
-    <!--                        <TextView-->
-    <!--                            android:layout_width="match_parent"-->
-    <!--                            android:layout_height="match_parent"-->
-    <!--                            android:gravity="center"-->
-    <!--                            android:text="Semi Special"-->
-    <!--                            android:textSize="20dp" />-->
-    <!--                    </androidx.cardview.widget.CardView>-->
-
-    <!--                    <androidx.cardview.widget.CardView-->
-    <!--                        android:id="@+id/SWard"-->
-    <!--                        android:layout_width="match_parent"-->
-    <!--                        android:layout_height="150dp"-->
-    <!--                        android:layout_margin="10dp"-->
-    <!--                        android:layout_weight="1"-->
-    <!--                        app:cardCornerRadius="10dp"-->
-    <!--                        app:cardElevation="5dp">-->
-
-    <!--                        <TextView-->
-    <!--                            android:layout_width="match_parent"-->
-    <!--                            android:layout_height="match_parent"-->
-    <!--                            android:gravity="center"-->
-    <!--                            android:text="Special"-->
-    <!--                            android:textSize="20dp" />-->
-    <!--                    </androidx.cardview.widget.CardView>-->
-
-    <!--                </LinearLayout>-->
-
-
-    <!--            </LinearLayout>-->
-
-    <!--        </androidx.cardview.widget.CardView>-->
-
-    <!--    </LinearLayout>-->
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
@@ -185,4 +17,156 @@
         app:menu="@menu/main_menu_header"
         tools:ignore="VisualLintBounds" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_baseline_clear_all_24" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/profile" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/HospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="@string/hospital_name"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/cardview"
+                android:elevation="@dimen/_9sdp">
+
+                <TextView
+                    android:id="@+id/staff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/andada"
+                    android:gravity="center"
+                    android:text="@string/staff"
+                    android:textColor="#AD000000"
+                    android:textSize="@dimen/_25sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/cardview"
+                android:elevation="@dimen/_9sdp">
+
+                <TextView
+                    android:id="@+id/patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/andada"
+                    android:gravity="center"
+                    android:text="@string/Patient"
+                    android:textColor="#AD000000"
+                    android:textSize="@dimen/_25sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/cardview"
+                android:elevation="@dimen/_9sdp"
+                tools:ignore="VisualLintBounds">
+
+                <TextView
+                    android:id="@+id/doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/andada"
+                    android:gravity="center"
+                    android:text="@string/doctor"
+                    android:textColor="#AD000000"
+                    android:textSize="@dimen/_25sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/cardview"
+                android:elevation="@dimen/_9sdp"
+                tools:ignore="VisualLintBounds">
+
+                <TextView
+                    android:id="@+id/done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="@dimen/_20sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.drawerlayout.widget.DrawerLayout>
+
+
+

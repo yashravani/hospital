@@ -8,17 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragPatientHome extends Fragment {
+public class FragmentDoctorProfile extends Fragment {
 
-    public FragPatientHome() {
-
-
-
+    public FragmentDoctorProfile() {
+        // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_frag_patient_profile, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_doctor_profile, container, false);
     }
 }

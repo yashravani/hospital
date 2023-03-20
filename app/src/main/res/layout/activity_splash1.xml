@@ -30,8 +30,8 @@
         android:id="@+id/Frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layout"
         android:layout_above="@+id/btnRegister"
+        android:layout_below="@+id/layout"
         android:background="@color/white"
         tools:ignore="VisualLintBounds">
 
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="0dp"
+            android:layout_marginBottom="@dimen/_1sdp"
             android:gravity="center"
             android:orientation="horizontal" />
 
@@ -58,9 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginBottom="@dimen/_5sdp"
-        android:layout_marginHorizontal="@dimen/_10sdp"
         android:background="@drawable/input_bg"
         android:text="@string/start"
         android:textColor="#000000"
