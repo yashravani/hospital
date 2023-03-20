@@ -14,9 +14,9 @@ public class SpleshActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splesh);
 
         new Handler().postDelayed(() -> {
-                startActivity(new Intent(SpleshActivity.this, Splash1.class));
-                finish();
-        }, 5096);
-//                    }, 125);
-        }
+            startActivity(new Intent(SpleshActivity.this, Splash1.class));
+            finish();
+//        }, 5094);
+        }, 125);
+    }
 }

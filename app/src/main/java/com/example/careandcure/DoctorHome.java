@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.careandcure.R;
-
 public class DoctorHome extends AppCompatActivity {
 
     @Override

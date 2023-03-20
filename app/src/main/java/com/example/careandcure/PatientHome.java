@@ -1,16 +1,11 @@
 package com.example.careandcure;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 
@@ -32,13 +27,6 @@ public class PatientHome extends AppCompatActivity {
 
         //noinspection deprecation
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-//            int id = item.getItemId();
-//            if (id == R.id.home) {
-//                loadFrag(new FragPatientHome(), false);
-//            } else {
-//                loadFrag(new FragPatientPayment(), true);
-//            }
-
             switch (item.getItemId()) {
                 case R.id.home:
                     loadFrag(new FragPatientHome(), false);
@@ -46,8 +34,6 @@ public class PatientHome extends AppCompatActivity {
                 case R.id.payment:
                     loadFrag(new FragPatientPayment(), false);
                     break;
-                    case R.id.more:
-                        break;
                 default:
                     break;
             }

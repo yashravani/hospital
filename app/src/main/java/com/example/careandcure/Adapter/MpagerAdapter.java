@@ -13,7 +13,7 @@ public class MpagerAdapter extends PagerAdapter {
     private final int[] layouts;
     private final LayoutInflater layoutInflater;
 
-    public MpagerAdapter(int[] layouts, Context context){
+    public MpagerAdapter(int[] layouts, Context context) {
 
         this.layouts = layouts;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -27,13 +27,13 @@ public class MpagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view==object;
+        return view == object;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        View view = layoutInflater.inflate(layouts[position],container,false );
+        View view = layoutInflater.inflate(layouts[position], container, false);
         container.addView(view);
         return view;
     }

@@ -18,7 +18,7 @@
             android:id="@+id/arrowback"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
-            android:src="@drawable/baseline_close_24"
+            android:src="@drawable/close"
             tools:ignore="ContentDescription" />
 
         <TextView

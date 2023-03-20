@@ -70,7 +70,7 @@
                     android:id="@+id/payment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/baseline_currency_rupee_24"
+                    android:drawableStart="@drawable/currency_rupee"
                     android:inputType="number"
                     android:textColor="@color/black"
                     android:textColorHint="#546E7A"

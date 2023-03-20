@@ -3,19 +3,19 @@
 
     <item
         android:id="@+id/home"
-        android:icon="@drawable/baseline_home_24"
+        android:icon="@drawable/home"
         android:title="@string/home"/>
 
 
     <item
         android:id="@+id/payment"
-        android:icon="@drawable/baseline_currency_rupee_24"
+        android:icon="@drawable/currency_rupee"
         android:title="@string/payment"/>
 
 
     <item
         android:id="@+id/more"
-        android:icon="@drawable/baseline_more"
+        android:icon="@drawable/more"
         android:title="@string/more"/>
 
 </menu>
