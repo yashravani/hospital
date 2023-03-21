@@ -12,11 +12,12 @@
         android:layout_gravity="center|top">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
             android:layout_centerInParent="true"
             android:contentDescription="@string/todo"
-            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/round_image"
+            android:src="@drawable/logo"
             tools:ignore="ImageContrastCheck" />
 
     </RelativeLayout>
@@ -637,47 +638,10 @@
                         tools:ignore="RtlHardcoded" />
 
                     <TextView
-                        android:id="@+id/paymentstatus1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/height1"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/allerta"
-                        android:text="@string/payment_status"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/height"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="@dimen/_125sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:text="@string/dot"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/paymentstatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/height"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="@dimen/_140sdp"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:fontFamily="@font/allerta"
-                        android:gravity="center|left"
-                        android:text="@string/compeleted"
-                        android:textColor="#25CF2D"
-                        android:textSize="18sp"
-                        tools:ignore="RtlHardcoded" />
-
-                    <TextView
                         android:id="@+id/email1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/paymentstatus"
+                        android:layout_below="@+id/height"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:fontFamily="@font/allerta"
                         android:text="@string/email"
@@ -687,7 +651,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/paymentstatus"
+                        android:layout_below="@+id/height"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="@dimen/_125sdp"
                         android:layout_marginTop="@dimen/_8sdp"
@@ -699,7 +663,7 @@
                         android:id="@+id/email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/paymentstatus"
+                        android:layout_below="@+id/height"
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="@dimen/_140sdp"
                         android:layout_marginTop="@dimen/_10sdp"

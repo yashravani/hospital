@@ -80,9 +80,10 @@
                         android:id="@+id/MobileNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableStart="@drawable/phone"
                         android:drawablePadding="@dimen/_10sdp"
                         android:inputType="phone"
+                        android:maxLength="10"
                         android:singleLine="true"
                         android:textColorHint="#757575"
                         tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
@@ -101,7 +102,7 @@
                         android:id="@+id/Email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableStart="@drawable/email"
                         android:drawablePadding="@dimen/_10sdp"
                         android:inputType="textEmailAddress"
                         android:singleLine="true"
@@ -122,7 +123,7 @@
                         android:id="@+id/Address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableStart="@drawable/address"
                         android:drawablePadding="@dimen/_10sdp"
                         android:inputType="textMultiLine"
                         android:textColorHint="#757575"
@@ -134,15 +135,35 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:background="#11070707"
-                    android:hint="@string/password"
+                    android:hint="@string/upi_id"
                     app:boxStrokeColor="@color/white"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/upi"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:inputType="text"
+                        android:textColorHint="#757575"
+                        tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="#11070707"
+                    android:hint="@string/password"
+                    app:boxStrokeColor="#5E00FF0A"
                     app:hintTextColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/Password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableStart="@drawable/password"
                         android:drawablePadding="@dimen/_10sdp"
                         android:inputType="textPassword"
                         android:singleLine="true"
@@ -156,7 +177,7 @@
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:background="#11070707"
                     android:hint="@string/confirm_password"
-                    app:boxStrokeColor="#5E00FF0A"
+                    app:boxStrokeColor="@color/white"
                     app:hintTextColor="@color/black"
                     app:passwordToggleEnabled="true">
 
@@ -164,7 +185,7 @@
                         android:id="@+id/ConfirmPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableStart="@drawable/password"
                         android:drawablePadding="@dimen/_10sdp"
                         android:inputType="textPassword"
                         android:singleLine="true"
@@ -233,9 +254,7 @@
                     android:text="@string/REGISTRATION"
                     tools:ignore="VisualLintButtonSize" />
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 

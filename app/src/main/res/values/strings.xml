@@ -108,7 +108,10 @@
     <string name="Patient">Patient</string>
     <string name="doctor">Doctor</string>
     <string name="welcome">Welcome,</string>
-    <string name="this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data">This Application is Admin side Application Here User only see own data by login and Hospital Admin can Add data</string>
     <string name="patient_name">Patient Name</string>
+    <string name="patient_mobile_no">Patient Mobile No.</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data">this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data</string>
 
 </resources>

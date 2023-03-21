@@ -41,7 +41,7 @@ public class DoctorHome extends AppCompatActivity {
 
             return true;
         });
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.patient);
     }
 
     public void loadFrag(Fragment fragment, boolean flag) {
