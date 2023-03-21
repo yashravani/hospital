@@ -10,22 +10,22 @@
     <group android:checkableBehavior="none">
 
         <item
-            android:id="@+id/home"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/home" />
 
         <item
-            android:id="@+id/patientdetails"
+            android:id="@+id/nav_patientdetails"
             android:icon="@drawable/ic_baseline_person_24"
             android:title="@string/patient_details" />
 
         <item
-            android:id="@+id/staffdetails"
+            android:id="@+id/nav_staffdetails"
             android:icon="@drawable/ic_baseline_person_24"
             android:title="@string/staff_details" />
 
         <item
-            android:id="@+id/doctordetails"
+            android:id="@+id/nav_doctordetails"
             android:icon="@drawable/ic_baseline_person_24"
             android:title="@string/doctor_details" />
 
@@ -37,7 +37,7 @@
 
             <group android:checkableBehavior="none">
                 <item
-                    android:id="@+id/profile"
+                    android:id="@+id/nav_profile"
                     android:icon="@drawable/ic_baseline_person_24"
                     android:title="@string/profile" />
 
@@ -46,10 +46,6 @@
                     android:icon="@drawable/logout"
                     android:title="@string/logout" />
 
-                <item
-                    android:id="@+id/nav_policy"
-                    android:icon="@drawable/password"
-                    android:title="@string/change_password" />
             </group>
         </menu>
     </item>

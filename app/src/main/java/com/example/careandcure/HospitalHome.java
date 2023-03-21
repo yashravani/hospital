@@ -18,7 +18,7 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    ImageView menuIcon;
+    ImageView menuIcon, profile;
 
 
     @SuppressLint("MissingInflatedId")
@@ -26,6 +26,15 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_home);
+
+
+        profile = findViewById(R.id.profile);
+
+        profile.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalHome.this, HospitalProfile.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        });
 
 
         menuIcon = findViewById(R.id.menu_icon);
@@ -76,14 +85,20 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.home:
+            case R.id.nav_home:
                 Intent intent = new Intent(HospitalHome.this, HospitalHome.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
 
-            case R.id.patientdetails:
+            case R.id.nav_patientdetails:
                 intent = new Intent(HospitalHome.this, PatientHome.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_profile:
+                intent = new Intent(HospitalHome.this, HospitalProfile.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
