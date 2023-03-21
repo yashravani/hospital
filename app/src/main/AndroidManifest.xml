@@ -12,9 +12,29 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".Patient1"
+            android:exported="false"
+            android:theme="@style/Theme.patient1"/>
+        <activity
+            android:name=".Doctor1"
+            android:exported="false"
+            android:theme="@style/Theme.doctor1"/>
+        <activity
+            android:name=".Doctor"
+            android:exported="false"
+            android:theme="@style/Theme.doctor" />
+        <activity
+            android:name=".Patient"
+            android:exported="false"
+            android:theme="@style/Theme.patient" />
+        <activity
+            android:name=".Staff"
+            android:exported="false"
+            android:theme="@style/Theme.staff" />
+        <activity
             android:name=".HospitalProfile"
             android:exported="false"
-            android:theme="@style/Theme.hospitalprofile"/>
+            android:theme="@style/Theme.hospitalprofile" />
         <activity
             android:name=".HospitalHome"
             android:exported="false"

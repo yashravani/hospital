@@ -114,5 +114,12 @@
     <string name="aadhar_number">Aadhar Number</string>
     <string name="this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data">this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data</string>
     <string name="update">UPDATE</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="doctor_mobile_no">Doctor Mobile No.</string>
+    <string name="dcotor_name">Dcotor Name</string>
+    <string name="no">No.</string>
+    <string name="patient_image">Patient Image</string>
+    <string name="submit">SUBMIT</string>
+    <string name="doctor_image">Doctor Image</string>
 
 </resources>

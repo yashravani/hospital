@@ -7,22 +7,23 @@
     android:padding="@dimen/_2sdp"
     tools:context=".FragmentDoctorProfile">
 
-    <RelativeLayout
-        android:id="@+id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_70sdp"
+        app:cardElevation="@dimen/_15sdp">
 
         <ImageView
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/round_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:contentDescription="@string/todo"
-            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:src="@drawable/hospital"
             tools:ignore="ImageContrastCheck" />
 
-    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -19,6 +20,7 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageView menuIcon, profile;
+    TextView staff, patient, doctor;
 
 
     @SuppressLint("MissingInflatedId")
@@ -29,9 +31,29 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
 
 
         profile = findViewById(R.id.profile);
-
         profile.setOnClickListener(view -> {
             Intent intent = new Intent(HospitalHome.this, HospitalProfile.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        });
+
+        staff = findViewById(R.id.staff);
+        staff.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalHome.this, Staff.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        });
+
+        patient = findViewById(R.id.patient);
+        patient.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalHome.this, Patient.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        });
+
+        doctor = findViewById(R.id.doctor);
+        doctor.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalHome.this, Doctor.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
@@ -92,13 +114,25 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_patientdetails:
-                intent = new Intent(HospitalHome.this, PatientHome.class);
+                intent = new Intent(HospitalHome.this, Patient.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_doctordetails:
+                intent = new Intent(HospitalHome.this, Doctor.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
 
             case R.id.nav_profile:
                 intent = new Intent(HospitalHome.this, HospitalProfile.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_staffdetails:
+                intent = new Intent(HospitalHome.this, Staff.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;

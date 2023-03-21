@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Doctor1">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lightblue"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/arrowback"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/arrow_back"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/full_name"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/mobile_no"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/phone"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/email"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/email"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/gender"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/gender"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/age"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/age"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/aadhar_number"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/address"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/home"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/specialist"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#11070707"
+                android:hint="@string/qualification"
+                app:boxStrokeColor="#63FF5722"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HospitalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColorHint="#757575"
+                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="#11070707"
+                    android:text="@string/add_image"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="VisualLintOverlap" />
+
+                <ImageView
+                    android:id="@+id/imageinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_240sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/error_outline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/add_photos"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/doctor_image"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:drawableStart="@drawable/add_photos"
+                    android:text="@string/certificate"
+                    tools:ignore="VisualLintButtonSize" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/input_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:backgroundTint="#6FC6EEFD"
+                android:text="@string/submit"
+                tools:ignore="VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

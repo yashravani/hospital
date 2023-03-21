@@ -3,24 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/_10sdp"
     tools:context=".FragPatientHome">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_150sdp"
+        app:cardCornerRadius="@dimen/_70sdp"
+        app:cardElevation="@dimen/_15sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/_5sdp">
 
         <ImageView
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:contentDescription="@string/todo"
-            android:background="@drawable/round_image"
+            android:scaleType="fitXY"
             android:src="@drawable/logo"
             tools:ignore="ImageContrastCheck" />
 
-    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -673,7 +676,6 @@
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         tools:ignore="RtlHardcoded" />
-
 
 
                 </RelativeLayout>

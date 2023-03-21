@@ -94,6 +94,31 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
+    <style name="Theme.staff" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.patient" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.doctor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.patient1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.doctor1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
 
 
     <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
