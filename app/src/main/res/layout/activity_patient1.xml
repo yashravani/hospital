@@ -59,7 +59,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/mobile_no"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="@color/white"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -81,7 +81,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/email"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="#5E00FF0A"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -89,8 +89,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/email"
-                    android:inputType="textEmailAddress"
                     android:drawablePadding="@dimen/_10sdp"
+                    android:inputType="textEmailAddress"
                     android:singleLine="true"
                     android:textColorHint="#757575"
                     tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
@@ -122,7 +122,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/blood_group"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="@color/white"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -142,7 +142,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/age"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="#5E00FF0A"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -151,6 +151,8 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/age"
                     android:drawablePadding="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLength="3"
                     android:singleLine="true"
                     android:textColorHint="#757575"
                     tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
@@ -182,7 +184,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/relative_mobile"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="@color/white"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -204,7 +206,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/relation"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="#5E00FF0A"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -244,7 +246,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/disease"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="@color/white"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -264,7 +266,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/admit_date"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="#5E00FF0A"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -304,7 +306,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/ward_no"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="@color/white"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -324,14 +326,14 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="#11070707"
                 android:hint="@string/weight"
-                app:boxStrokeColor="#63FF5722"
+                app:boxStrokeColor="#5E00FF0A"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/HospitalName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/weight"
                     android:drawablePadding="@dimen/_10sdp"
                     android:singleLine="true"
                     android:textColorHint="#757575"
@@ -351,7 +353,7 @@
                     android:id="@+id/HospitalName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/height"
                     android:drawablePadding="@dimen/_10sdp"
                     android:singleLine="true"
                     android:textColorHint="#757575"
@@ -406,9 +408,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/input_bg"
+                android:backgroundTint="#6FC6EEFD"
                 android:clickable="true"
                 android:focusable="true"
-                android:backgroundTint="#6FC6EEFD"
                 android:text="@string/submit"
                 tools:ignore="VisualLintButtonSize" />
 
@@ -416,6 +418,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>
