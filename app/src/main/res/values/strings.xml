@@ -121,11 +121,11 @@
     <string name="patient_image">Patient Image</string>
     <string name="submit">SUBMIT</string>
     <string name="doctor_image">Doctor Image</string>
-    <string name="nurshing">Nurshing</string>
+    <string name="nurshing">Nurse</string>
     <string name="lab">Lab</string>
-    <string name="word_boy">Word Boy</string>
+    <string name="ward_boy">Ward Boy</string>
     <string name="reception">Reception</string>
-    <string name="cleaning">Cleaning</string>
+    <string name="cleaning">Cleaning Staff</string>
     <string name="medical">Medical</string>
     <string name="rmo">RMO</string>
     <string name="ot_staff">OT Staff</string>

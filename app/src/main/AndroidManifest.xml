@@ -12,13 +12,45 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".OTstaffHome"
+            android:exported="false"
+            android:theme="@style/Theme.otstaffhome"/>
+        <activity
+            android:name=".RmoHome"
+            android:exported="false"
+            android:theme="@style/Theme.rmohome"/>
+        <activity
+            android:name=".LabHome"
+            android:exported="false"
+            android:theme="@style/Theme.labhome"/>
+        <activity
+            android:name=".MedicalHome"
+            android:exported="false"
+            android:theme="@style/Theme.medicalhome"/>
+        <activity
+            android:name=".CleaningHome"
+            android:exported="false"
+            android:theme="@style/Theme.cleaninghome"/>
+        <activity
+            android:name=".ReceptionHome"
+            android:exported="false"
+            android:theme="@style/Theme.receptionhome"/>
+        <activity
+            android:name=".WardboyHome"
+            android:exported="false"
+            android:theme="@style/Theme.wardboyhome"/>
+        <activity
+            android:name=".NurseHome"
+            android:exported="false"
+            android:theme="@style/Theme.nursehome" />
+        <activity
             android:name=".Patient_Recycle_1"
             android:exported="false"
-            android:theme="@style/Theme.patient_recycle_1"/>
+            android:theme="@style/Theme.patient_recycle_1" />
         <activity
             android:name=".Doctor_Recycle_1"
             android:exported="false"
-            android:theme="@style/Theme.doctor_recycle_1"/>
+            android:theme="@style/Theme.doctor_recycle_1" />
         <activity
             android:name=".Patient1"
             android:exported="false"

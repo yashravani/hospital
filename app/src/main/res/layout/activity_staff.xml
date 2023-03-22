@@ -40,6 +40,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/nurse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -71,12 +72,13 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/wardboy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20sdp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/wardboy"
+                        android:id="@+id/ward"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -95,9 +97,9 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/wardboy"
+                        android:layout_below="@+id/ward"
                         android:gravity="center"
-                        android:text="@string/word_boy" />
+                        android:text="@string/ward_boy" />
 
                 </RelativeLayout>
 
@@ -111,11 +113,12 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/reception"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/reception"
+                        android:id="@+id/reception1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -135,19 +138,20 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/reception"
+                        android:layout_below="@+id/reception1"
                         android:gravity="center"
                         android:text="@string/reception" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/cleaning"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20sdp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cleaning"
+                        android:id="@+id/cleaning1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -167,7 +171,7 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/cleaning"
+                        android:layout_below="@+id/cleaning1"
                         android:gravity="center"
                         android:text="@string/cleaning" />
 
@@ -183,11 +187,12 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/medical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/medical"
+                        android:id="@+id/medical1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -207,19 +212,20 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/medical"
+                        android:layout_below="@+id/medical1"
                         android:gravity="center"
                         android:text="@string/medical" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/lab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20sdp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/lab"
+                        android:id="@+id/lab1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -238,7 +244,7 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/lab"
+                        android:layout_below="@+id/lab1"
                         android:gravity="center"
                         android:text="@string/lab" />
 
@@ -254,11 +260,12 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/rmo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/rmo"
+                        android:id="@+id/rmo1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -277,19 +284,20 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/rmo"
+                        android:layout_below="@+id/rmo1"
                         android:gravity="center"
                         android:text="@string/rmo" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/otstaff"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20sdp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/otstaff"
+                        android:id="@+id/otstaff1"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="@dimen/_100sdp"
                         android:layout_margin="@dimen/_6sdp"
@@ -308,7 +316,7 @@
                     <TextView
                         android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:layout_below="@+id/otstaff"
+                        android:layout_below="@+id/otstaff1"
                         android:gravity="center"
                         android:text="@string/ot_staff" />
 
