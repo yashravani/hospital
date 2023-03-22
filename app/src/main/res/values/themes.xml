@@ -119,6 +119,16 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
+    <style name="Theme.doctor_recycle_1" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+    <style name="Theme.patient_recycle_1" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/lightblue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
 
 
     <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">

@@ -1,14 +1,13 @@
 package com.example.careandcure;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class Doctor1 extends AppCompatActivity {
+public class Patient_Recycle_1 extends AppCompatActivity {
 
     ImageView arrowback;
 
@@ -16,11 +15,11 @@ public class Doctor1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor1);
+        setContentView(R.layout.patient_recycle_1);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {
-            Intent intent1 = new Intent(Doctor1.this, Doctor.class);
+            Intent intent1 = new Intent(Patient_Recycle_1.this, Patient.class);
             intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent1);
             finish();

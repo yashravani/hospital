@@ -12,13 +12,21 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".Patient_Recycle_1"
+            android:exported="false"
+            android:theme="@style/Theme.patient_recycle_1"/>
+        <activity
+            android:name=".Doctor_Recycle_1"
+            android:exported="false"
+            android:theme="@style/Theme.doctor_recycle_1"/>
+        <activity
             android:name=".Patient1"
             android:exported="false"
-            android:theme="@style/Theme.patient1"/>
+            android:theme="@style/Theme.patient1" />
         <activity
             android:name=".Doctor1"
             android:exported="false"
-            android:theme="@style/Theme.doctor1"/>
+            android:theme="@style/Theme.doctor1" />
         <activity
             android:name=".Doctor"
             android:exported="false"
