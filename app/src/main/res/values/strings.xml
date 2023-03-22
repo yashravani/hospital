@@ -129,5 +129,7 @@
     <string name="medical">Medical</string>
     <string name="rmo">RMO</string>
     <string name="ot_staff">OT Staff</string>
+    <string name="identity_no">Identity No.</string>
+    <string name="name">Name</string>
 
 </resources>
