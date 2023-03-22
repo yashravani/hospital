@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:toos="http://schemas.android.com/apk/res-auto">
     <!-- Base application theme. -->
-    <style name="Theme.CareAndCure" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.CareAndCure" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -17,104 +17,104 @@
         <item name="android:textColorHint">@color/black</item>
     </style>
 
-    <style name="Theme.home" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.home" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.docotrlogin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.docotrlogin" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.hospitalregister" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/white</item>
-        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
-    </style>
-
-
-    <style name="Theme.splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.hospitalregister" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
 
-    <style name="Theme.splash1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
+    </style>
+
+
+    <style name="Theme.splash1" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.patientandhoapital" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.patientandhoapital" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">#19FF5722</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.pateintlogin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.pateintlogin" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">#19FF5722</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.hospitallogin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.hospitallogin" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">#1D4CAF50</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.patientotp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.patientotp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.doctorotp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.doctorotp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.hospitalotp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.hospitalotp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.patienthome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.patienthome" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.doctorhome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.doctorhome" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.hospitalhome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.hospitalhome" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.hospitalprofile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.hospitalprofile" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.staff" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.staff" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.patient" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.patient" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.doctor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.doctor" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.patient1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.patient1" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
 
-    <style name="Theme.doctor1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.doctor1" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/lightblue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m" toos:targetApi="l">true</item>
     </style>
