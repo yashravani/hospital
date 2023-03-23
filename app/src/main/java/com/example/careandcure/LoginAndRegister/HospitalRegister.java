@@ -20,7 +20,7 @@ import java.util.Objects;
 public class HospitalRegister extends AppCompatActivity {
 
     AppCompatButton button;
-    ImageView imageinfo;
+    ImageView imageinfo, arrowback;
     TextInputEditText MobileNo;
 
     @SuppressLint("MissingInflatedId")
@@ -40,6 +40,14 @@ public class HospitalRegister extends AppCompatActivity {
             intent.putExtra("MobileNo", Objects.requireNonNull(MobileNo.getText()).toString());
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
+        });
+
+        arrowback = findViewById(R.id.arrowback);
+        arrowback.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalRegister.this, HospitalLogin.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
         });
 
 

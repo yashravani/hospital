@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Doctor">
+    tools:context=".DoctorHome">
 
     <RelativeLayout
         android:id="@+id/layout"
@@ -27,12 +27,26 @@
     <!--        android:layout_height="match_parent"-->
     <!--        android:layout_below="@+id/layout" />-->
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:focusableInTouchMode="true"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/shape"
+        android:elevation="@dimen/_4sdp">
+    </androidx.appcompat.widget.SearchView>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_5sdp"
         android:orientation="vertical"
-        android:layout_below="@+id/layout"
+        android:layout_below="@+id/searchView"
         app:cardCornerRadius="@dimen/_11sdp"
         app:cardElevation="@dimen/_12sdp"
         app:cardUseCompatPadding="true"

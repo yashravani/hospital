@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class Patient1 extends AppCompatActivity {
+public class BillHome extends AppCompatActivity {
 
     ImageView arrowback;
 
@@ -15,13 +15,13 @@ public class Patient1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.patient_home_1);
+        setContentView(R.layout.bill_home);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {
-            Intent intent1 = new Intent(Patient1.this, Patient.class);
-            intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent1);
+            Intent intent = new Intent(BillHome.this,HospitalHome.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
             finish();
         });
 

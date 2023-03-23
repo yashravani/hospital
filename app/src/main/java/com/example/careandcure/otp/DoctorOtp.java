@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.careandcure.DoctorHome;
+import com.example.careandcure.DoctorLoginHome;
 import com.example.careandcure.LoginAndRegister.DoctorLogin;
 import com.example.careandcure.R;
 
@@ -38,7 +38,7 @@ public class DoctorOtp extends AppCompatActivity {
 
         verifybutton = findViewById(R.id.verifybutton);
         verifybutton.setOnClickListener(view -> {
-            Intent intent = new Intent(DoctorOtp.this, DoctorHome.class);
+            Intent intent = new Intent(DoctorOtp.this, DoctorLoginHome.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });

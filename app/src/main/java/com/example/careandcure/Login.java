@@ -15,7 +15,7 @@ import com.example.careandcure.LoginAndRegister.HospitalLogin;
 import com.example.careandcure.LoginAndRegister.PatientLogin;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class PatientHospitalDoctor extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     ImageView messege, arrowback;
     BottomSheetDialog bottomSheetDialog;
@@ -30,7 +30,7 @@ public class PatientHospitalDoctor extends AppCompatActivity {
 
         messege = findViewById(R.id.messege);
         messege.setOnClickListener(view -> {
-            bottomSheetDialog = new BottomSheetDialog(PatientHospitalDoctor.this, R.style.BottomSheetTheme);
+            bottomSheetDialog = new BottomSheetDialog(Login.this, R.style.BottomSheetTheme);
             @SuppressLint("InflateParams") View sheetview = LayoutInflater.from(getApplicationContext()).inflate(R.layout.bottom_dialog, null);
             sheetview.findViewById(R.id.arrowback).setOnClickListener(view12 -> bottomSheetDialog.dismiss());
             bottomSheetDialog.setContentView(sheetview);
@@ -39,28 +39,28 @@ public class PatientHospitalDoctor extends AppCompatActivity {
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientHospitalDoctor.this, Splash1.class);
+            Intent intent = new Intent(Login.this, Splash1.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         patient = findViewById(R.id.patient);
         patient.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientHospitalDoctor.this, PatientLogin.class);
+            Intent intent = new Intent(Login.this, PatientLogin.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         hospital = findViewById(R.id.hospital);
         hospital.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientHospitalDoctor.this, HospitalLogin.class);
+            Intent intent = new Intent(Login.this, HospitalLogin.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         doctor = findViewById(R.id.doctor);
         doctor.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientHospitalDoctor.this, DoctorLogin.class);
+            Intent intent = new Intent(Login.this, DoctorLogin.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });

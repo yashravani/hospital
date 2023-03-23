@@ -20,7 +20,7 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageView menuIcon, profile;
-    TextView staff, patient, doctor;
+    TextView staff, patient, doctor, bill;
 
 
     @SuppressLint("MissingInflatedId")
@@ -46,14 +46,21 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
 
         patient = findViewById(R.id.patient);
         patient.setOnClickListener(view -> {
-            Intent intent = new Intent(HospitalHome.this, Patient.class);
+            Intent intent = new Intent(HospitalHome.this, PatientHome.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
 
         doctor = findViewById(R.id.doctor);
         doctor.setOnClickListener(view -> {
-            Intent intent = new Intent(HospitalHome.this, Doctor.class);
+            Intent intent = new Intent(HospitalHome.this, DoctorHome.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        });
+
+        bill = findViewById(R.id.bill);
+        bill.setOnClickListener(view -> {
+            Intent intent = new Intent(HospitalHome.this, BillHome.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
@@ -63,14 +70,10 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle actionBarDrawerToggle;
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-
-
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-
         navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
-
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
         menuIcon = findViewById(R.id.menu_icon);
@@ -79,17 +82,12 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     }
 
     private void navigationDrawer() {
-
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
-//        navigationView.setCheckedItem(R.id.nav_dashboard);
-
         menuIcon.setOnClickListener(view -> {
-
             if (drawerLayout.isDrawerVisible(GravityCompat.START))
                 drawerLayout.closeDrawer(GravityCompat.START);
             else drawerLayout.openDrawer(GravityCompat.START);
-
         });
     }
 
@@ -103,43 +101,35 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
 
     @SuppressLint("NonConstantResourceId")
     @Override
-
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
         switch (item.getItemId()) {
             case R.id.nav_home:
                 Intent intent = new Intent(HospitalHome.this, HospitalHome.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
-
             case R.id.nav_patientdetails:
-                intent = new Intent(HospitalHome.this, Patient.class);
+                intent = new Intent(HospitalHome.this, PatientHome.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
-
             case R.id.nav_doctordetails:
-                intent = new Intent(HospitalHome.this, Doctor.class);
+                intent = new Intent(HospitalHome.this, DoctorHome.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
-
             case R.id.nav_profile:
                 intent = new Intent(HospitalHome.this, HospitalProfile.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
-
             case R.id.nav_staffdetails:
                 intent = new Intent(HospitalHome.this, Staff.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 break;
-
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
-
 }

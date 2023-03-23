@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Doctor_Recycle_1">
+    tools:context=".Doctor_Home_Recycle_1">
 
     <RelativeLayout
         android:id="@+id/layout"

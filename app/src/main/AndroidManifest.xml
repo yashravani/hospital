@@ -12,59 +12,130 @@
         android:theme="@style/Theme.CareAndCure"
         tools:targetApi="31">
         <activity
+            android:name=".BillHome"
+            android:exported="false"
+            android:theme="@style/Theme.bill"/>
+        <activity
+            android:name=".WardboyHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".RmoHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".ReceptionHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".OTstaffHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".NurseHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".MedicalHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".LabHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".CleaningHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".AssistantHome_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".AssistantHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.assistanthome_1" />
+        <activity
+            android:name=".AssistantHome"
+            android:exported="false"
+            android:theme="@style/Theme.assistanthome" />
+        <activity
+            android:name=".WardboyHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.wardboyhome_1" />
+        <activity
+            android:name=".RmoHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.rmohome_1" />
+        <activity
+            android:name=".ReceptionHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.receptionhome_1" />
+        <activity
+            android:name=".OTstaffHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.otstaffhome_1" />
+        <activity
+            android:name=".MedicalHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.medicalhome_1" />
+        <activity
+            android:name=".LabHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.labhome_1" />
+        <activity
+            android:name=".CleaningHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.cleaninghome_1" />
+        <activity
+            android:name=".NurseHome_1"
+            android:exported="false"
+            android:theme="@style/Theme.nursehome_1" />
+        <activity
             android:name=".OTstaffHome"
             android:exported="false"
-            android:theme="@style/Theme.otstaffhome"/>
+            android:theme="@style/Theme.otstaffhome" />
         <activity
             android:name=".RmoHome"
             android:exported="false"
-            android:theme="@style/Theme.rmohome"/>
+            android:theme="@style/Theme.rmohome" />
         <activity
             android:name=".LabHome"
             android:exported="false"
-            android:theme="@style/Theme.labhome"/>
+            android:theme="@style/Theme.labhome" />
         <activity
             android:name=".MedicalHome"
             android:exported="false"
-            android:theme="@style/Theme.medicalhome"/>
+            android:theme="@style/Theme.medicalhome" />
         <activity
             android:name=".CleaningHome"
             android:exported="false"
-            android:theme="@style/Theme.cleaninghome"/>
+            android:theme="@style/Theme.cleaninghome" />
         <activity
             android:name=".ReceptionHome"
             android:exported="false"
-            android:theme="@style/Theme.receptionhome"/>
+            android:theme="@style/Theme.receptionhome" />
         <activity
             android:name=".WardboyHome"
             android:exported="false"
-            android:theme="@style/Theme.wardboyhome"/>
+            android:theme="@style/Theme.wardboyhome" />
         <activity
             android:name=".NurseHome"
             android:exported="false"
             android:theme="@style/Theme.nursehome" />
         <activity
-            android:name=".Patient_Recycle_1"
+            android:name=".Patient_Home_Recycle_1"
             android:exported="false"
             android:theme="@style/Theme.patient_recycle_1" />
         <activity
-            android:name=".Doctor_Recycle_1"
+            android:name=".Doctor_Home_Recycle_1"
             android:exported="false"
             android:theme="@style/Theme.doctor_recycle_1" />
         <activity
-            android:name=".Patient1"
+            android:name=".PatientHome_1"
             android:exported="false"
             android:theme="@style/Theme.patient1" />
         <activity
-            android:name=".Doctor1"
+            android:name=".DoctorHome_1"
             android:exported="false"
             android:theme="@style/Theme.doctor1" />
         <activity
-            android:name=".Doctor"
+            android:name=".DoctorHome"
             android:exported="false"
             android:theme="@style/Theme.doctor" />
         <activity
-            android:name=".Patient"
+            android:name=".PatientHome"
             android:exported="false"
             android:theme="@style/Theme.patient" />
         <activity
@@ -80,11 +151,11 @@
             android:exported="false"
             android:theme="@style/Theme.hospitalhome" />
         <activity
-            android:name=".DoctorHome"
+            android:name=".DoctorLoginHome"
             android:exported="false"
             android:theme="@style/Theme.doctorhome" />
         <activity
-            android:name=".PatientHome"
+            android:name=".PatientLoginHome"
             android:exported="false"
             android:theme="@style/Theme.patienthome" />
         <activity
@@ -116,7 +187,7 @@
             android:exported="false"
             android:theme="@style/Theme.pateintlogin" />
         <activity
-            android:name=".PatientHospitalDoctor"
+            android:name=".Login"
             android:exported="false"
             android:theme="@style/Theme.patientandhoapital" />
         <activity

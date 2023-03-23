@@ -1,58 +1,40 @@
 package com.example.careandcure;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.FrameLayout;
+import android.widget.ImageView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DoctorHome extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
-    FrameLayout frameLayout;
+    ImageView arrowback;
+    FloatingActionButton floatingActionButton;
 
-
-    @SuppressLint("NonConstantResourceId")
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.doctor_login_home);
+        setContentView(R.layout.doctor_home);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        frameLayout = findViewById(R.id.frameLayout);
-
-        //noinspection deprecation
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.patient:
-                    loadFrag(new FragmentDoctorPatient(), false);
-                    break;
-                case R.id.profile:
-                    loadFrag(new FragmentDoctorProfile(), false);
-                    break;
-                default:
-                    break;
-            }
-
-            return true;
+        arrowback = findViewById(R.id.arrowback);
+        arrowback.setOnClickListener(view -> {
+            Intent intent1 = new Intent(DoctorHome.this, HospitalHome.class);
+            intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent1);
+            finish();
         });
-        bottomNavigationView.setSelectedItemId(R.id.patient);
-    }
 
-    public void loadFrag(Fragment fragment, boolean flag) {
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        if (flag) {
-            ft.add(R.id.frameLayout, fragment);
-        } else {
-            ft.replace(R.id.frameLayout, fragment);
-        }
-        ft.commit();
+        floatingActionButton = findViewById(R.id.floatingActionButton);
+        floatingActionButton.setOnClickListener(view -> {
+            Intent intent1 = new Intent(DoctorHome.this, DoctorHome_1.class);
+            intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent1);
+        });
+
+
     }
 }
-

@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.example.careandcure.PatientHospitalDoctor;
+import com.example.careandcure.Login;
 import com.example.careandcure.R;
 import com.example.careandcure.otp.DoctorOtp;
 import com.google.android.material.textfield.TextInputEditText;
@@ -43,7 +43,7 @@ public class DoctorLogin extends AppCompatActivity {
         });
 
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(DoctorLogin.this, PatientHospitalDoctor.class);
+            Intent intent = new Intent(DoctorLogin.this, Login.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });

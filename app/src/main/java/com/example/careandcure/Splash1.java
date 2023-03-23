@@ -34,7 +34,7 @@ public class Splash1 extends AppCompatActivity {
 
         btnRegister = findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(view -> {
-            Intent intent = new Intent(Splash1.this, PatientHospitalDoctor.class);
+            Intent intent = new Intent(Splash1.this, Login.class);
             startActivity(intent);
         });
 

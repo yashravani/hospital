@@ -5,20 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class Staff extends AppCompatActivity {
 
     ImageView arrowback;
-    RelativeLayout nurse, wardboy, reception, cleaning, medical, lab, rmo, otstaff;
+    RelativeLayout nurse, wardboy, reception, cleaning, medical, lab, rmo, otstaff,assistant;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_staff);
+        setContentView(R.layout.staff);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {
@@ -80,6 +79,13 @@ public class Staff extends AppCompatActivity {
         otstaff = findViewById(R.id.otstaff);
         otstaff.setOnClickListener(view -> {
             Intent intent1 = new Intent(Staff.this, OTstaffHome.class);
+            intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent1);
+        });
+
+        assistant = findViewById(R.id.assistant);
+        assistant.setOnClickListener(view -> {
+            Intent intent1 = new Intent(Staff.this, AssistantHome.class);
             intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent1);
         });

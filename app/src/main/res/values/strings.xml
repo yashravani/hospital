@@ -131,5 +131,18 @@
     <string name="ot_staff">OT Staff</string>
     <string name="identity_no">Identity No.</string>
     <string name="name">Name</string>
+    <string name="field">Field</string>
+    <string name="nurseimage">Nurse Image</string>
+    <string name="assistant">Assistant</string>
+    <string name="assitantimage">Assistant Image</string>
+    <string name="image">Image</string>
+    <string name="labimage">Lab Image</string>
+    <string name="medicalimage">Medical Image</string>
+    <string name="otstaffimage">OTstaff Image</string>
+    <string name="wardboyimage">Wardboy Image</string>
+    <string name="rmoimage">RMO Image</string>
+    <string name="receptionimage">Reception Image</string>
+    <string name="bill">Bill</string>
+    <string name="totalamount">Total Amount</string>
 
 </resources>

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.careandcure.LoginAndRegister.HospitalLogin;
+import com.example.careandcure.LoginAndRegister.HospitalRegister;
 import com.example.careandcure.R;
 
 public class HospitalOtp extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class HospitalOtp extends AppCompatActivity {
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(HospitalOtp.this, HospitalLogin.class);
+            Intent intent = new Intent(HospitalOtp.this, HospitalRegister.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
             finish();

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.careandcure.HospitalHome;
-import com.example.careandcure.PatientHospitalDoctor;
+import com.example.careandcure.Login;
 import com.example.careandcure.R;
 
 public class HospitalLogin extends AppCompatActivity {
@@ -31,7 +31,7 @@ public class HospitalLogin extends AppCompatActivity {
         arrowback = findViewById(R.id.arrowback);
 
         arrowback.setOnClickListener(view -> {
-            Intent intent = new Intent(HospitalLogin.this, PatientHospitalDoctor.class);
+            Intent intent = new Intent(HospitalLogin.this, Login.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });

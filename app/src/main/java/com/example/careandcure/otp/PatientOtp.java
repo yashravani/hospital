@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.careandcure.LoginAndRegister.PatientLogin;
-import com.example.careandcure.PatientHome;
+import com.example.careandcure.PatientLoginHome;
 import com.example.careandcure.R;
 
 public class PatientOtp extends AppCompatActivity {
@@ -35,7 +35,7 @@ public class PatientOtp extends AppCompatActivity {
 
         verifybutton = findViewById(R.id.verifybutton);
         verifybutton.setOnClickListener(view -> {
-            Intent intent = new Intent(PatientOtp.this, PatientHome.class);
+            Intent intent = new Intent(PatientOtp.this, PatientLoginHome.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         });
