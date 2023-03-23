@@ -20,7 +20,7 @@ public class HospitalOtp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_otp);
+        setContentView(R.layout.hospital_otp);
 
         TextView textView = findViewById(R.id.textmobile);
         textView.setText(String.format("+91-%s", getIntent().getStringExtra("MobileNo")));

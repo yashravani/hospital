@@ -15,7 +15,7 @@ public class Patient_Recycle_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.patient_recycle_1);
+        setContentView(R.layout.patient_home_recycle_1);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {

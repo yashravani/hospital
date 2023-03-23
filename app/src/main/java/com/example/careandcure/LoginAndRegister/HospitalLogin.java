@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.example.careandcure.HospitalHome;
 import com.example.careandcure.PatientHospitalDoctor;
 import com.example.careandcure.R;
-import com.example.careandcure.otp.HospitalOtp;
 
 public class HospitalLogin extends AppCompatActivity {
 
@@ -24,7 +23,7 @@ public class HospitalLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_login);
+        setContentView(R.layout.hospital_login);
 
         textregister = findViewById(R.id.textregister);
         textregister1 = findViewById(R.id.textregister1);

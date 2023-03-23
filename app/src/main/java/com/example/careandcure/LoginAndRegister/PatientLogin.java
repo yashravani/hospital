@@ -28,7 +28,7 @@ public class PatientLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_login);
+        setContentView(R.layout.patient_login);
 
         TextInputLayout phoneInputLayout = findViewById(R.id.textinputpatient);
         phoneInputLayout.setPrefixText("+91 ");

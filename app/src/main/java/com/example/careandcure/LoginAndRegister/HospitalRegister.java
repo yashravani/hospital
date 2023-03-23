@@ -27,7 +27,7 @@ public class HospitalRegister extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_register);
+        setContentView(R.layout.hospital_register);
 
         MobileNo = findViewById(R.id.MobileNo);
 

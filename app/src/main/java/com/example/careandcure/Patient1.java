@@ -15,7 +15,7 @@ public class Patient1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient1);
+        setContentView(R.layout.patient_home_1);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {

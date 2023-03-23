@@ -11,7 +11,7 @@ public class SpleshActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splesh);
+        setContentView(R.layout.splesh);
 
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SpleshActivity.this, Splash1.class));

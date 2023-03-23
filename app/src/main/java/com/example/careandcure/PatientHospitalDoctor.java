@@ -26,7 +26,7 @@ public class PatientHospitalDoctor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_hospital_doctor_login);
+        setContentView(R.layout.login);
 
         messege = findViewById(R.id.messege);
         messege.setOnClickListener(view -> {

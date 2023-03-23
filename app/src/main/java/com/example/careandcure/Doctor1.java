@@ -1,7 +1,6 @@
 package com.example.careandcure;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -16,7 +15,7 @@ public class Doctor1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor1);
+        setContentView(R.layout.doctor_home_1);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {

@@ -15,7 +15,7 @@ public class HospitalProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_profile);
+        setContentView(R.layout.hospital_profile);
 
         arrowback = findViewById(R.id.arrowback);
         arrowback.setOnClickListener(view -> {

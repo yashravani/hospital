@@ -27,7 +27,7 @@ public class HospitalHome extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_home);
+        setContentView(R.layout.hospital_home);
 
 
         profile = findViewById(R.id.profile);

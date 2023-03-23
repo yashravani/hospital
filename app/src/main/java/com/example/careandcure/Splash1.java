@@ -22,7 +22,7 @@ public class Splash1 extends AppCompatActivity {
     AppCompatButton btnRegister;
 
     private ViewPager mPager;
-    private final int[] layouts = {R.layout.first_slide, R.layout.second_slide, R.layout.third_slide, R.layout.fourth_slide};
+    private final int[] layouts = {R.layout.slide_first, R.layout.slide_second, R.layout.slide_third, R.layout.slide_fourth};
     private LinearLayout Dots_Layout;
     private int current_position = 0;
 
@@ -30,7 +30,7 @@ public class Splash1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash1);
+        setContentView(R.layout.splash1);
 
         btnRegister = findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(view -> {

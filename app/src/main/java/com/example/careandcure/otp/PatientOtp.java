@@ -21,7 +21,7 @@ public class PatientOtp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_otp);
+        setContentView(R.layout.patient_login_otp);
 
         TextView textView = findViewById(R.id.textmobilepatient);
         textView.setText(String.format("+91-%s",getIntent().getStringExtra("textphonepatient")));

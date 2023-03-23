@@ -21,7 +21,7 @@ public class DoctorOtp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor_otp);
+        setContentView(R.layout.doctor_login_otp);
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         TextView textView = findViewById(R.id.textmobiledoctor);

@@ -27,7 +27,7 @@ public class DoctorLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor_login);
+        setContentView(R.layout.doctor_login);
 
         arrowback = findViewById(R.id.arrowback);
         loginbutton = findViewById(R.id.loginbutton);
