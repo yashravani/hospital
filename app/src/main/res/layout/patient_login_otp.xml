@@ -87,7 +87,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -103,7 +102,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -119,7 +117,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -135,7 +132,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -151,7 +147,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -167,7 +162,6 @@
                     android:background="@drawable/input_bg"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:importantForAutofill="yes"
                     android:inputType="number"
                     android:maxLength="1"
                     android:textColor="@color/black"
@@ -177,10 +171,20 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 tools:ignore="VisualLintBounds">
@@ -191,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/didn_t_receive_the_otp"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/resendotp1"
@@ -202,9 +206,19 @@
                     android:text="@string/resend_otp"
                     android:textColor="@color/black"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
+
 
             </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:clickable="false"
+                android:contextClickable="false"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/verifybutton"

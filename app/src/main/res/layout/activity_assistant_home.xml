@@ -26,15 +26,14 @@
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_below="@+id/layout"
+        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_8sdp"
-        android:focusableInTouchMode="true"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:backgroundTint="@color/white"
         android:background="@drawable/shape"
-        android:elevation="@dimen/_4sdp">
-    </androidx.appcompat.widget.SearchView>
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/_4sdp"
+        android:focusableInTouchMode="true" />
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
     <!--        android:layout_width="match_parent"-->
@@ -44,11 +43,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
         android:layout_below="@+id/searchView"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_100sdp"
         android:orientation="vertical"
         app:cardCornerRadius="@dimen/_11sdp"
-        android:layout_marginTop="@dimen/_100sdp"
         app:cardElevation="@dimen/_12sdp"
         app:cardUseCompatPadding="true"
         app:contentPadding="@dimen/_1sdp">
@@ -174,7 +173,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
@@ -188,7 +186,7 @@
         android:contentDescription="@string/todo"
         android:focusable="true"
         app:srcCompat="@drawable/add"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
 
 </RelativeLayout>

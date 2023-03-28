@@ -7,7 +7,6 @@
     tools:context=".otp.DoctorOtp">
 
     <RelativeLayout
-        android:id="@+id/layout"
         android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
@@ -177,10 +176,20 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 tools:ignore="VisualLintBounds">
@@ -205,6 +214,13 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/verifybutton"

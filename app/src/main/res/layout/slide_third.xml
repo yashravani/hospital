@@ -2,24 +2,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp"
     android:background="@color/white">
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_350sdp"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/todo" />
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/hospitallogin" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/actor"
         android:layout_below="@+id/img"
+        android:fontFamily="@font/actor"
         android:gravity="center"
+        android:text="@string/thirdslide"
         android:textColor="@color/black"
-        android:text="@string/this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data"
         android:textSize="15sp"
         android:textStyle="bold" />
 

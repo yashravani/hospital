@@ -16,7 +16,7 @@ public class SpleshActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SpleshActivity.this, Splash1.class));
             finish();
-//        }, 5094);
-        }, 125);
+        }, 5094);
+//        }, 125);
     }
 }

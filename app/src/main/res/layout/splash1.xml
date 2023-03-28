@@ -30,7 +30,7 @@
         android:id="@+id/Frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnRegister"
+        android:layout_above="@+id/start"
         android:layout_below="@+id/layout"
         android:background="@color/white"
         tools:ignore="VisualLintBounds">
@@ -54,7 +54,7 @@
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnRegister"
+        android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

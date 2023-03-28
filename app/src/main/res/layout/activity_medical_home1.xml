@@ -43,7 +43,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -63,7 +63,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/phone"
@@ -86,7 +86,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/gender"
+                    android:id="@+id/MedicalGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/gender"
@@ -106,7 +106,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/age"
@@ -128,7 +128,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalAadhar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -150,7 +150,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/home"
@@ -170,7 +170,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/MedicalField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/specialist"
@@ -186,7 +186,6 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -197,7 +196,6 @@
                     tools:ignore="VisualLintOverlap" />
 
                 <ImageView
-                    android:id="@+id/imageinfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_240sdp"
@@ -225,7 +223,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/MedicalButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"

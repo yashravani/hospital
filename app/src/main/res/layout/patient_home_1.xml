@@ -8,7 +8,6 @@
     tools:context=".PatientHome_1">
 
     <RelativeLayout
-        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lightblue"
@@ -43,7 +42,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -63,7 +62,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/phone"
@@ -85,7 +84,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/email"
@@ -106,7 +105,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/gender"
@@ -126,7 +125,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientBloodGroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/blood"
@@ -146,7 +145,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/age"
@@ -168,7 +167,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientRelativeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -188,7 +187,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientRelativeMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/phone"
@@ -210,7 +209,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientRelation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/relation"
@@ -230,7 +229,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/home"
@@ -250,7 +249,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientDisease"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/disease"
@@ -270,7 +269,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientAdmitDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/calendar"
@@ -290,7 +289,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientPayment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/upi"
@@ -310,7 +309,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientWardNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ward"
@@ -330,7 +329,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientWeight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/weight"
@@ -350,7 +349,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/PatientHeight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/height"
@@ -365,7 +364,6 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -376,7 +374,6 @@
                     tools:ignore="VisualLintOverlap" />
 
                 <ImageView
-                    android:id="@+id/imageinfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_240sdp"
@@ -402,8 +399,10 @@
 
             </LinearLayout>
 
+
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/PatientButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"

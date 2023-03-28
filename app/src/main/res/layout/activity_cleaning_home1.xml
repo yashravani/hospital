@@ -8,7 +8,6 @@
     tools:context=".CleaningHome_1">
 
     <RelativeLayout
-        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lightblue"
@@ -43,7 +42,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -63,7 +62,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/phone"
@@ -86,7 +85,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/gender"
+                    android:id="@+id/CleaningGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/gender"
@@ -106,7 +105,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/age"
@@ -128,7 +127,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningAadhar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -150,7 +149,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/home"
@@ -170,7 +169,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/CleaningField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/specialist"
@@ -186,7 +185,6 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -197,7 +195,6 @@
                     tools:ignore="VisualLintOverlap" />
 
                 <ImageView
-                    android:id="@+id/imageinfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_240sdp"
@@ -225,7 +222,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/CleaningButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"

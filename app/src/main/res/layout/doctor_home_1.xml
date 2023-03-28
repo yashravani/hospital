@@ -8,7 +8,6 @@
     tools:context=".DoctorHome_1">
 
     <RelativeLayout
-        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lightblue"
@@ -43,7 +42,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -63,7 +62,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/phone"
@@ -85,7 +84,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/email"
@@ -106,7 +105,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/gender"
@@ -126,7 +125,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/age"
@@ -148,7 +147,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorAadhar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_person_24"
@@ -170,7 +169,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/home"
@@ -190,7 +189,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorSpecialist"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/specialist"
@@ -210,7 +209,7 @@
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/HospitalName"
+                    android:id="@+id/DoctorQualification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/qualification"
@@ -225,7 +224,6 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -236,7 +234,6 @@
                     tools:ignore="VisualLintOverlap" />
 
                 <ImageView
-                    android:id="@+id/imageinfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_240sdp"
@@ -272,7 +269,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/DoctorButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"

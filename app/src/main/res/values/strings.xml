@@ -100,10 +100,6 @@
     <string name="delete_account">Delete Account</string>
     <string name="blank" />
     <string name="other">Other</string>
-    <string name="secondslide">1 :- This is info box here you know how to work login section.
-    \n2 :- This is Patient side login activity.
-    \n3 :- This is Doctor side login activity.
-    \n4 :- This is Hospital side login activity.</string>
     <string name="staff">Staff</string>
     <string name="Patient">Patient</string>
     <string name="doctor">Doctor</string>
@@ -112,7 +108,6 @@
     <string name="patient_mobile_no">Patient Mobile No.</string>
     <string name="upi_id">UPI ID</string>
     <string name="aadhar_number">Aadhar Number</string>
-    <string name="this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data">this_application_is_admin_side_application_here_user_only_see_own_data_by_login_and_hospital_admin_can_add_data</string>
     <string name="update">UPDATE</string>
     <string name="doctor_name">Doctor Name</string>
     <string name="doctor_mobile_no">Doctor Mobile No.</string>
@@ -144,5 +139,14 @@
     <string name="receptionimage">Reception Image</string>
     <string name="bill">Bill</string>
     <string name="totalamount">Total Amount</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="secondslide">1 :- This is info box here you know how to work login section.
+    \n2 :- This is Patient side login activity.
+    \n3 :- This is Doctor side login activity.
+    \n4 :- This is Hospital side login activity.</string>
+    <string name="thirdslide">This App is Powered by GYV Tech.</string>
+    <string name="fourthslide">
+    GYV has worried about admin and user privacy.
+    So forget privacy related issues and use smooth and excellent app.</string>
 
 </resources>

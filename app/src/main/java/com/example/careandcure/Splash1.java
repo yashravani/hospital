@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import com.example.careandcure.Adapter.MpagerAdapter;
 
 import java.util.Timer;
@@ -19,8 +20,7 @@ import java.util.TimerTask;
 
 public class Splash1 extends AppCompatActivity {
 
-    AppCompatButton btnRegister;
-
+    AppCompatButton start;
     private ViewPager mPager;
     private final int[] layouts = {R.layout.slide_first, R.layout.slide_second, R.layout.slide_third, R.layout.slide_fourth};
     private LinearLayout Dots_Layout;
@@ -32,8 +32,8 @@ public class Splash1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash1);
 
-        btnRegister = findViewById(R.id.btnRegister);
-        btnRegister.setOnClickListener(view -> {
+        start = findViewById(R.id.start);
+        start.setOnClickListener(view -> {
             Intent intent = new Intent(Splash1.this, Login.class);
             startActivity(intent);
         });
@@ -110,7 +110,7 @@ public class Splash1 extends AppCompatActivity {
             public void run() {
                 handler.post(runnable);
             }
-        }, 250, 4000);
+        }, 200, 6000);
     }
 
 }

@@ -8,7 +8,6 @@
     tools:context=".HospitalProfile">
 
     <RelativeLayout
-        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lightblue"
@@ -42,7 +41,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/HospitalName"
+                android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aldrich"
@@ -127,7 +126,7 @@
                     app:hintTextColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/MobileNo"
+                        android:id="@+id/HospitalMobileNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/phone"
@@ -149,7 +148,7 @@
                     app:hintTextColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/Email"
+                        android:id="@+id/HospitalEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/email"
@@ -170,7 +169,7 @@
                     app:hintTextColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/Address"
+                        android:id="@+id/HospitalAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/address"
@@ -190,7 +189,7 @@
                     app:hintTextColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/Address"
+                        android:id="@+id/HospitalUpi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/upi"
@@ -244,7 +243,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/update"
+                    android:id="@+id/HospitalUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_marginTop="@dimen/_20sdp"

@@ -19,7 +19,7 @@ import java.util.Objects;
 
 public class HospitalRegister extends AppCompatActivity {
 
-    AppCompatButton button;
+    AppCompatButton registration;
     ImageView imageinfo, arrowback;
     TextInputEditText MobileNo;
 
@@ -29,13 +29,13 @@ public class HospitalRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hospital_register);
 
-        MobileNo = findViewById(R.id.MobileNo);
+        MobileNo = findViewById(R.id.Mobile_No);
 
-        button = findViewById(R.id.button);
-        button.setOnClickListener(v -> button.setBackgroundColor(Color.GREEN));
+        registration = findViewById(R.id.registration);
+        registration.setOnClickListener(v -> registration.setBackgroundColor(Color.GREEN));
 
-        button.setOnClickListener(view -> {
-            button.setBackgroundColor(Color.GREEN);
+        registration.setOnClickListener(view -> {
+            registration.setBackgroundColor(Color.GREEN);
             Intent intent = new Intent(HospitalRegister.this, HospitalOtp.class);
             intent.putExtra("MobileNo", Objects.requireNonNull(MobileNo.getText()).toString());
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -51,7 +51,7 @@ public class HospitalRegister extends AppCompatActivity {
         });
 
 
-        TextInputLayout phoneInputLayout = findViewById(R.id.inputtext);
+        TextInputLayout phoneInputLayout = findViewById(R.id.input_text);
         phoneInputLayout.setPrefixText("+91 ");
 
         imageinfo = findViewById(R.id.imageinfo);
